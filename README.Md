@@ -1,5 +1,6 @@
+# Hypothesis Testing
 
-
+Hypothesis testing is a statistical method used to make decisions about the population based on sample data. It involves the following steps:
 
 ## Files
 
@@ -38,6 +39,37 @@ Hypothesis testing is a statistical method used to make decisions about the popu
 ## Example
 
 The dataset `house_price_increase.csv` contains the percentage increase in house prices. We can use hypothesis testing to determine if the average price increase is significantly different from a certain value.
+
+## Additional Notes
+
+##### Any Claim that can be tested is called Hypothesis Testing, Null Hypothesis is the Baseline Claim, Alternative Hypothesis is the Claim that we are testing.
+##### If the Null Hypothesis is True, then the Alternative Hypothesis is False and Vice Versa.
+
+##### Steps for Hypothesis Testing
+1. Define the Null Hypothesis
+2. Define the Alternative Hypothesis
+#### Once Hypothesis is defined, we need to test the Hypothesis and Finalize the Hypothesis with Z-Test or T-Test or Chi-Square Test or Anova Test.
+### Once this is done we arrive at a conclusion.
+
+#### Z test is used when the sample size is large and the population standard deviation is known. 30 is a good sample size.
+#### T test is used when the sample size is small and the population standard deviation is unknown.
+#### Chi-Square Test is used when we are comparing the Categorical Variables.
+
+#### We can also have one-tailed test and two-tailed test. In one-tailed test we are only interested in one side of the distribution, in two-tailed test we are interested in both sides of the distribution.
+#### Example: if we say Inflation is > 5% then we call it one-tailed test and if it's not 5% meaning it can be 6% or 4% then we call it two-tailed test.
+
+##### If Z score falls in rejection region then we reject the Null Hypothesis, if Z score falls in acceptance region then we accept the Null Hypothesis.
+##### If Z score is greater than 1.96 or less than -1.96 then we reject the Null Hypothesis, if Z score is between -1.96 and 1.96 then we accept the Null Hypothesis.
+
+##### Type one and Type two errors
+- Type 1 error is when we reject the Null Hypothesis when it is True.
+- Type 2 error is when we fail to reject the Null Hypothesis when it is False.
+- Statistical power is the probability of rejecting the Null Hypothesis when it is False.
+- False Positive is Type 1 error and False Negative is Type 2 error.
+- Statistical Power is 1 - Type 2 error.
+
+##### AB Testing is used to compare the two versions of the same product. We have control group and test group.
+### This test is used to compare the two versions of the same product most times to check for improvements.
 
 ## Requirements
 
